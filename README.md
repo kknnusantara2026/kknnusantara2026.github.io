@@ -29,7 +29,7 @@ Situs statis (HTML, CSS, Vanilla JavaScript) tanpa backend, siap di-*deploy* ke 
 
 Semua foto ditaruh langsung di folder `img/` (sejajar dengan file HTML), dengan nama **persis** seperti berikut:
 
-- **Logo & umum:** `logo-kkn.png`, `logo-universitas.png`, `favicon.png`, `hero-bg.jpg`
+- **Logo & umum:** `logo-kelompok.jpg`, `logo-universitas.png`, `favicon.png`, `hero-bg.jpg`
 - **Profil Desa:** `sejarah-desa.jpg`, `mata-pencaharian.jpg`, `wisata-1.jpg` s.d. `wisata-3.jpg`, `umkm-1.jpg` s.d. `umkm-3.jpg`
 - **Program Kerja:** `program-bimbel.jpg`, `program-pengajian.jpg`, `program-tanam-pohon.jpg`, `program-umkm.jpg`, `program-posyandu.jpg`, `program-kerja-bakti.jpg`
 - **Tim KKN:** `tim-1.jpg` s.d. `tim-16.jpg` (rasio foto **1:1**)
