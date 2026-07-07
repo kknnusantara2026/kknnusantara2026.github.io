@@ -1739,6 +1739,18 @@ section {
   font-weight: 600;
 }
 
+.team-prodi-missing {
+  display: inline-block;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.team-social-empty {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* ---------------------------------------------------------
    14. HALAMAN GALERI & LIGHTBOX
    --------------------------------------------------------- */
