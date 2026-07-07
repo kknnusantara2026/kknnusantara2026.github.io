@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri | KKN Desa Margawangi</title>
+  <meta name="description" content="Dokumentasi kegiatan KKN Desa Margawangi.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://username.github.io/kkn-margawangi/galeri.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://username.github.io/kkn-margawangi/galeri.html">
+  <meta property="og:title" content="Galeri | KKN Desa Margawangi">
+  <meta property="og:description" content="Dokumentasi kegiatan KKN Desa Margawangi.">
+  <meta property="og:image" content="https://username.github.io/kkn-margawangi/img/hero-bg.jpg">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Galeri | KKN Desa Margawangi">
+  <meta name="twitter:description" content="Dokumentasi kegiatan KKN Desa Margawangi.">
+  <meta name="twitter:image" content="https://username.github.io/kkn-margawangi/img/hero-bg.jpg">
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet Utama -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+
+  <!-- Progress bar tipis di bagian atas, menunjukkan posisi scroll -->
+  <div id="scrollProgress"></div>
+
+  <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- Preloader: tampil sesaat saat halaman pertama kali dimuat -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <span class="preloader-leaf"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+  </div>
+
+    <header id="navbar" class="navbar">
+    <div class="container navbar-inner">
+
+      <a href="index.html" class="navbar-brand" aria-label="Beranda KKN Desa Margawangi">
+        <img src="img/logo-kkn.png" alt="" class="navbar-logo" onerror="this.style.display='none'">
+        <span class="navbar-brand-text">KKN <strong>Margawangi</strong></span>
+      </a>
+
+      <nav class="navbar-nav" id="navbarNav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html" class="nav-link" data-page="index">Beranda</a></li>
+          <li><a href="about.html" class="nav-link" data-page="about">Tentang</a></li>
+          <li><a href="profile-desa.html" class="nav-link" data-page="profile-desa">Profil Desa</a></li>
+          <li><a href="program-kerja.html" class="nav-link" data-page="program-kerja">Program Kerja</a></li>
+          <li><a href="galeri.html" class="nav-link" data-page="galeri">Galeri</a></li>
+          <li><a href="artikel.html" class="nav-link" data-page="artikel">Artikel</a></li>
+          <li><a href="kontak.html" class="nav-link nav-link-cta" data-page="kontak">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navbarNav">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main class="site-main" id="main-content">
+
+    <!-- ===================================================== -->
+    <!-- PAGE BANNER                                            -->
+    <!-- ===================================================== -->
+    <section class="page-banner">
+      <div class="container">
+        <p class="page-breadcrumb anim-fade-in">
+          <a href="index.html">Beranda</a> <i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Galeri
+        </p>
+        <h1 class="page-title anim-slide-up delay-1">Galeri Kegiatan</h1>
+        <p class="page-subtitle anim-slide-up delay-2">
+          Dokumentasi visual perjalanan KKN Desa Margawangi merawat alam dan tradisi.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- FILTER KATEGORI                                        -->
+    <!-- ===================================================== -->
+    <section class="gallery-filter-section">
+      <div class="container">
+        <div class="gallery-filters anim-fade-in" role="group" aria-label="Filter kategori galeri">
+          <button class="filter-btn is-active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="pendidikan">Pendidikan</button>
+          <button class="filter-btn" data-filter="keagamaan">Keagamaan</button>
+          <button class="filter-btn" data-filter="lingkungan">Lingkungan</button>
+          <button class="filter-btn" data-filter="pemberdayaan">Pemberdayaan</button>
+          <button class="filter-btn" data-filter="kesehatan">Kesehatan</button>
+          <button class="filter-btn" data-filter="sosial">Sosial</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- MASONRY GALLERY                                        -->
+    <!-- ===================================================== -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid" id="galleryGrid">
+
+          <figure class="gallery-item h-tall" data-category="pendidikan" tabindex="0" role="button" aria-label="Lihat foto: Bimbingan Belajar Sore">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-1.jpg" alt="Bimbingan Belajar Sore" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Bimbingan Belajar Sore</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-medium" data-category="keagamaan" tabindex="0" role="button" aria-label="Lihat foto: Tahsin Al-Qur'an Bersama">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-2.jpg" alt="Tahsin Al-Qur'an Bersama" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Tahsin Al-Qur'an Bersama</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-short" data-category="lingkungan" tabindex="0" role="button" aria-label="Lihat foto: Penanaman Bibit Pohon">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-3.jpg" alt="Penanaman Bibit Pohon" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Penanaman Bibit Pohon</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-medium" data-category="lingkungan" tabindex="0" role="button" aria-label="Lihat foto: Aksi Bersih Sungai">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-4.jpg" alt="Aksi Bersih Sungai" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Aksi Bersih Sungai</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-tall" data-category="kesehatan" tabindex="0" role="button" aria-label="Lihat foto: Posyandu Balita">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-5.jpg" alt="Posyandu Balita" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Posyandu Balita</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-short" data-category="sosial" tabindex="0" role="button" aria-label="Lihat foto: Kerja Bakti Warga">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-6.jpg" alt="Kerja Bakti Warga" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Kerja Bakti Warga</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-medium" data-category="pemberdayaan" tabindex="0" role="button" aria-label="Lihat foto: Pelatihan UMKM Digital">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-7.jpg" alt="Pelatihan UMKM Digital" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Pelatihan UMKM Digital</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-tall" data-category="keagamaan" tabindex="0" role="button" aria-label="Lihat foto: Pengajian Rutin Ibu-Ibu">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-8.jpg" alt="Pengajian Rutin Ibu-Ibu" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Pengajian Rutin Ibu-Ibu</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-short" data-category="pendidikan" tabindex="0" role="button" aria-label="Lihat foto: Lomba Literasi Anak">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-9.jpg" alt="Lomba Literasi Anak" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Lomba Literasi Anak</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-medium" data-category="sosial" tabindex="0" role="button" aria-label="Lihat foto: Santunan Anak Yatim">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-10.jpg" alt="Santunan Anak Yatim" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Santunan Anak Yatim</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-tall" data-category="lingkungan" tabindex="0" role="button" aria-label="Lihat foto: Edukasi Bank Sampah">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-11.jpg" alt="Edukasi Bank Sampah" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Edukasi Bank Sampah</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item h-short" data-category="kesehatan" tabindex="0" role="button" aria-label="Lihat foto: Senam Sehat Lansia">
+            <div class="gallery-item-media img-fallback">
+              <img src="img/gal-12.jpg" alt="Senam Sehat Lansia" loading="lazy" onerror="this.parentElement.classList.add('img-fallback')">
+            </div>
+            <figcaption class="gallery-item-overlay">
+              <span class="gallery-item-zoom"><i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i></span>
+              <span class="gallery-item-title">Senam Sehat Lansia</span>
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <p class="gallery-empty" id="galleryEmpty" hidden>
+          Belum ada dokumentasi pada kategori ini.
+        </p>
+
+        <p class="text-note center">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          Foto di atas masih placeholder. Ganti file pada folder <code>img/</code> dengan dokumentasi asli kegiatan.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================== -->
+  <!-- LIGHTBOX                                               -->
+  <!-- ===================================================== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup lightbox">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto sebelumnya">
+      <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImage">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto berikutnya">
+      <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+    </button>
+  </div>
+
+
+    <footer id="site-footer" class="site-footer">
+    <div class="footer-top container">
+
+      <div class="footer-brand">
+        <div class="footer-brand-logos">
+          <img src="img/logo-kkn.png" alt="" class="footer-logo" onerror="this.style.display='none'">
+          <img src="img/logo-universitas.png" alt="" class="footer-logo" onerror="this.style.display='none'">
+        </div>
+        <p class="footer-brand-text">KKN <strong>Desa Margawangi</strong></p>
+        <p class="footer-tagline">
+          Merawat Ekoteologi, Menjaga Tradisi: Meneguhkan Iman, Melestarikan Alam.
+        </p>
+        <div class="footer-social">
+          <a href="https://instagram.com/kkn.margawangi" target="_blank" rel="noopener" aria-label="Instagram KKN Margawangi">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp KKN Margawangi">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:kkn.margawangi@gmail.com" aria-label="Email KKN Margawangi">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a href="https://youtube.com/@kknmargawangi" target="_blank" rel="noopener" aria-label="YouTube KKN Margawangi">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Tautan cepat">
+        <h4>Tautan Cepat</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="profile-desa.html">Profil Desa</a></li>
+          <li><a href="program-kerja.html">Program Kerja</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="artikel.html">Artikel</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h4>Kontak</h4>
+        <ul>
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Desa Margawangi, Kecamatan —, Kabupaten —</li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> kkn.margawangi@gmail.com</li>
+          <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> +62 812-3456-7890</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear"></span> KKN Desa Margawangi. Seluruh hak cipta dilindungi.</p>
+        <p class="footer-credit">Dibuat dengan dedikasi untuk masyarakat &amp; alam Margawangi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

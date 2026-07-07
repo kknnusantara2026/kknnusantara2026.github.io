@@ -1,0 +1,344 @@
+/* =========================================================
+   KKN DESA MARGAWANGI — RESPONSIVE.CSS
+   Berisi seluruh media query. Dipisah dari style.css agar
+   perubahan tampilan per perangkat mudah dilacak & dirawat.
+
+   Breakpoint yang dipakai di proyek ini:
+   - Desktop besar : > 1200px  (default, diatur di style.css)
+   - Laptop/Desktop kecil : <= 1200px
+   - Tablet        : <= 992px
+   - Tablet kecil / Android besar : <= 768px
+   - Mobile        : <= 576px
+   - Mobile kecil (iPhone SE, dsb.) : <= 375px
+
+   Catatan: aturan detail per komponen (navbar, hero, grid
+   kartu, dsb.) akan diisi bertahap seiring komponen tersebut
+   dibangun, supaya tidak ada aturan responsif yang menunjuk
+   ke elemen yang belum ada.
+   ========================================================= */
+
+/* ---------- Laptop / Desktop kecil (<= 1200px) ---------- */
+@media (max-width: 1200px) {
+  :root {
+    --container-width: 100%;
+  }
+}
+
+/* ---------- Tablet (<= 992px) ---------- */
+@media (max-width: 992px) {
+  .hero-logo {
+    height: 46px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .tujuan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-philosophy-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-philosophy-image {
+    max-width: 280px;
+    margin-inline: auto;
+  }
+
+  .split-layout,
+  .split-layout.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .split-layout.reverse .split-image {
+    order: 0;
+  }
+
+  .fact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .culture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .worship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .livelihood-item {
+    grid-template-columns: 140px 1fr 40px;
+  }
+
+  .timeline::before {
+    left: 24px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 0 var(--space-lg) 60px;
+  }
+
+  .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 2px;
+    right: auto;
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    column-count: 3;
+  }
+
+  .article-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrapper {
+    padding: var(--space-md);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--space-lg);
+  }
+}
+
+/* ---------- Tablet kecil / Android besar (<= 768px) ---------- */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(78vw, 320px);
+    background-color: var(--color-cream);
+    box-shadow: -8px 0 30px rgba(27, 67, 50, 0.15);
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
+    padding: 6.5rem 2rem 2rem;
+  }
+
+  .navbar-nav.is-open {
+    transform: translateX(0);
+  }
+
+  .navbar-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  .nav-link,
+  .navbar.navbar-transparent .nav-link {
+    color: var(--color-dark-green);
+    font-size: 1rem;
+  }
+
+  .nav-link-cta {
+    color: var(--color-white) !important;
+  }
+
+  .hero {
+    padding-block: var(--space-lg);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ---------- Mobile (<= 576px) ---------- */
+@media (max-width: 576px) {
+  .hero-logos {
+    gap: var(--space-xs);
+  }
+
+  .hero-logo {
+    height: 38px;
+  }
+
+  .scroll-indicator {
+    display: none; /* hemat ruang vertikal di layar kecil */
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vismi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tujuan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .livelihood-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .livelihood-percent {
+    text-align: left;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    column-count: 2;
+  }
+
+  .lightbox-close,
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 0.95rem;
+  }
+
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+  .lightbox-close { top: 0.5rem; right: 0.5rem; }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Rapatkan jarak antar-section di layar kecil supaya tidak
+     terlalu banyak scroll kosong */
+  section {
+    padding-block: var(--space-lg);
+  }
+
+  .page-banner {
+    padding-block: calc(var(--space-lg) + 1rem) var(--space-md);
+  }
+
+  /* Rapikan fact-grid 5 item: 2 baris penuh + 1 item terakhir
+     melebar penuh, daripada menyisakan slot kosong ganjil */
+  .fact-grid .fact-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .program-filters,
+  .gallery-filters {
+    gap: 0.4rem;
+  }
+
+  .program-filters .filter-btn,
+  .gallery-filters .filter-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+/* ---------- Mobile kecil (<= 375px) ---------- */
+@media (max-width: 375px) {
+  .container {
+    padding-inline: var(--space-sm);
+  }
+
+  .navbar-logo {
+    height: 32px;
+  }
+
+  .navbar-brand-text {
+    font-size: 0.95rem;
+  }
+
+  .navbar-brand-text strong {
+    display: block; /* "Margawangi" turun ke baris baru agar tak sempit */
+    font-size: 0.85rem;
+  }
+
+  .hero-logo {
+    height: 32px;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .gallery-grid {
+    column-count: 1;
+  }
+
+  .fact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fact-grid .fact-card:last-child {
+    grid-column: auto;
+  }
+
+  .nav-link-cta {
+    padding: 0.45rem 0.9rem;
+  }
+}

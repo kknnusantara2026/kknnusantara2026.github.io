@@ -1,0 +1,95 @@
+/* =========================================================
+   KKN DESA MARGAWANGI — ANIMATION.CSS
+   Berisi seluruh @keyframes dan kelas bantu animasi.
+   Animasi dipicu lewat JavaScript (js/animation.js) dengan
+   menambahkan/menghapus class berikut pada elemen terkait,
+   umumnya melalui IntersectionObserver saat elemen scroll
+   masuk ke viewport.
+   ========================================================= */
+
+/* ---------- Fade In ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.anim-fade-in {
+  opacity: 0;
+}
+.anim-fade-in.is-visible {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* ---------- Slide Up ---------- */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.anim-slide-up {
+  opacity: 0;
+}
+.anim-slide-up.is-visible {
+  animation: slideUp 0.8s ease forwards;
+}
+
+/* ---------- Slide Left (masuk dari kanan ke kiri) ---------- */
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.anim-slide-left {
+  opacity: 0;
+}
+.anim-slide-left.is-visible {
+  animation: slideLeft 0.8s ease forwards;
+}
+
+/* ---------- Slide Right (masuk dari kiri ke kanan) ---------- */
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.anim-slide-right {
+  opacity: 0;
+}
+.anim-slide-right.is-visible {
+  animation: slideRight 0.8s ease forwards;
+}
+
+/* ---------- Zoom ---------- */
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.anim-zoom {
+  opacity: 0;
+}
+.anim-zoom.is-visible {
+  animation: zoomIn 0.6s ease forwards;
+}
+
+/* ---------- Loading Animation (dipakai di preloader) ---------- */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes pulseLeaf {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.12); opacity: 0.7; }
+}
+
+/* ---------- Scroll Progress Bar ---------- */
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-dark-green), var(--color-leaf-green-light));
+  z-index: 1100;
+}
+
+/* ---------- Delay bertingkat (untuk efek stagger pada grid/list) ---------- */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
